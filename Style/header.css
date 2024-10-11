@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -30,6 +31,7 @@ header {
     width: 100%;
     z-index: 100;
     background-image: linear-gradient(rgba(10,10,10,0.5), transparent);
+    
 }
 
 header ul {
@@ -44,6 +46,10 @@ header a {
     color: aliceblue;
     transition: all 0.3s ease-in-out;
 
+}
+
+header li a .sign {
+    background-color: aliceblue;
 }
 
 header a:hover {
