@@ -1,35 +1,53 @@
-let phoneIndex = 1;
+let entryIndex = 1;
 
-function addPhoneNumber() {
-  // Get the phone number input
-  const phoneNumber = document.getElementById('phoneNumber').value;
-  
-  if (phoneNumber === "") {
-    alert("Please enter a valid phone number");
-    return;
-  }
-  
-  // Find the table body
-  const tableBody = document.getElementById('phoneTableBody');
-  
-  // Create a new row
-  const newRow = document.createElement('tr');
-  
-  // Create a cell for the index
-  const indexCell = document.createElement('td');
-  indexCell.textContent = phoneIndex++;
-  
-  // Create a cell for the phone number
-  const phoneCell = document.createElement('td');
-  phoneCell.textContent = phoneNumber;
-  
-  // Append the cells to the row
-  newRow.appendChild(indexCell);
-  newRow.appendChild(phoneCell);
-  
-  // Append the row to the table body
-  tableBody.appendChild(newRow);
-  
-  // Clear the input field after adding the number
-  document.getElementById('phoneNumber').value = '';
+function addEntry() {
+    const name = document.getElementById('name').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
+
+    const tableBody = document.getElementById('entryTableBody');
+
+    const newRow = document.createElement('tr');
+
+    const indexCell = document.createElement('td');
+    indexCell.textContent = entryIndex++;
+
+    const nameCell = document.createElement('td');
+    nameCell.textContent = name;
+
+    const phoneCell = document.createElement('td');
+    phoneCell.textContent = phoneNumber;
+
+    newRow.appendChild(indexCell);
+    newRow.appendChild(nameCell);
+    newRow.appendChild(phoneCell);
+
+    tableBody.appendChild(newRow);
+
+    document.getElementById('name').value = '';
+    document.getElementById('phoneNumber').value = '';
+}
+
+function saveCSV() {
+    let csvContent = "data:text/csv;charset=utf-8,";
+
+    csvContent += "Index,Name,Phone Number\r\n";
+    const rows = document.querySelectorAll("#entryTableBody tr")
+
+    rows.forEach(row => {
+        const rowData = [];
+        const columns = row.querySelectorAll("td")
+        columns.forEach(column => {
+            rowData.push(column.textContent);
+        })
+
+        csvContent += rowData.join(",") + "\r\n";
+    })
+
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "phonebook.csv")
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }

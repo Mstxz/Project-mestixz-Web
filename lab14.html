@@ -38,29 +38,32 @@
             <form>
                 <legend id="username">Become our world Creator</legend>
                 <label for="name"> Firstname </label>
-                <input type="text" placeholder="Username" id="name" required>
+                <input type="text" placeholder="Username" id="name">
                 <button onclick="setName(event)">Set</button>
                 <label for="profileimage">Profile Image</label>
                 <input type="text" placeholder="Image url here" id="profileimageinput">
                 <button onclick="setImage(event)">Set</button>
             </form>
 
-            <h1>Add Phone Number to Table</h1>
+            <form class="phone">
+                <input type="text" id="name" placeholder="Enter name">
+                <input type="text" id="phoneNumber" placeholder="Enter phone number">
+                <button onclick="addEntry()">Add Entry</button>
+                <button onclick="saveCSV()">Export to CSV</button>
+            </form>
 
-        <input type="text" id="phoneNumber" placeholder="Enter phone number">
-        <button onclick="addPhoneNumber()">Add Phone Number</button>
-
-        <table border="1">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Phone Number</th>
-            </tr>
-          </thead>
-          <tbody id="phoneTableBody">
-            <!-- Phone numbers will be added here -->
-          </tbody>
-  </table>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody id="entryTableBody">
+                    <!-- Entries will be added here -->
+                </tbody>
+            </table>
         </section>
     </main>
     
