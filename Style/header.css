@@ -20,6 +20,7 @@ body {
 
 /*Header*/
 header {
+    animation: fadeIn 1s linear;
     color: aliceblue;
     height: 100px;
     display: flex;
@@ -81,3 +82,14 @@ section {
   ::-webkit-scrollbar-thumb:hover {
     background: aliceblue;
   }
+
+/*Animation*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
