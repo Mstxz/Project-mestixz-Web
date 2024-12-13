@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/particle.css">
+    <link rel="stylesheet" href="Style/footer.css">
+
+    <link rel="icon" href="image/Logo_ROUNDED.png">
+    <title>Project Mestixz</title>
+</head>
+<body>
+
+    <header>
+        <h1>Project Mestixz</h1>
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#wiki">Wiki</a></li>
+                <li class="sign"><a href="lab14.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="banner" id="banner">
+            <div class="name">
+                <h4>Project</h4>
+                <h1>Mestixz</h1>
+            </div>
+
+            <div class="particle-container">
+                <!--
+                x = position y =  position
+                xt = horizontal movement speed
+                yt = vertical movement speed
+                xd = horizontal movement distance
+                yd = vertical movement distance
+                w = width & height
+                d = animation delay
+                -->
+                <span style="--x:50; --y:0; --xt:13; --yt:12; --xd:2; --yd:2; --w:25;  --d:1; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:16; --y:0; --xt:17; --yt:10; --xd:3; --yd:1; --w:39;  --d:6; --o:.5;" class="pt"><b></b></span>
+                <span style="--x:16; --y:0; --xt:17; --yt:10; --xd:3; --yd:3; --w:28;  --d:4; --o:.9;" class="pt"><b></b></span>
+                  <span style="--x:66; --y:0; --xt:11; --yt:13; --xd:3; --yd:2; --w:38;  --d:2; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:56; --y:-3; --xt:11; --yt:10; --xd:3; --yd:1; --w:58;  --d:0; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:19; --y:0; --xt:17; --yt:10; --xd:3; --yd:4; --w:45;  --d:9; --o:.7;" class="pt"><b></b></span>
+                <span style="--x:49; --y:0; --xt:17; --yt:10; --xd:3; --yd:-4; --w:65;  --d:2; --o:.6;" class="pt"><b></b></span>
+                <span style="--x:20; --y:0; --xt:13; --yt:12; --xd:2; --yd:4; --w:70;  --d:8; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:35; --y:3; --xt:8; --yt:16; --xd:0.5; --yd:0.8; --w:190; --d:5; --o:.7;" class="pt"><b></b></span>
+                <span style="--x:15; --y:10; --xt:18; --yt:16; --xd:0.5; --yd:1; --w:190; --d:6; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:15; --y:30; --xt:9; --yt:22; --xd:0.5; --yd:1; --w:30; --d:9; --o:.4;" class="pt"><b></b></span>
+                <span style="--x:4; --y:20; --xt:10; --yt:7; --xd:1.5; --yd:1.2; --w:26; --d:12; --o:0.4;" class="pt"><b></b></span> 
+                <span style="--x:50; --y:40; --xt:16; --yt:6; --xd:4; --yd:-2; --w:70; --d:5; --o:0.3;" class="pt"><b></b></span>
+                <span style="--x:50; --y:40; --xt:16; --yt:6; --xd:1; --yd:-2; --w:170; --d:0; --o:1;" class="pt"><b></b></span>
+                 <span style="--x:60; --y:40; --xt:16; --yt:6; --xd:1; --yd:2; --w:70; --d:5; --o:0.4;" class="pt"><b></b></span>
+                <span style="--x:50; --y:50; --xt:12; --yt:7; --xd:1; --yd:1.2; --w:100; --d:7; --o:0.4;" class="pt"><b></b></span>
+                  <span style="--x:70; --y:40; --xt:4; --yt:1; --xd:0.5; --yd:.2; --w:100; --d:7; --o:0.4;" class="pt"><b></b></span>
+                <span style="--x:2; --y:50; --xt:10; --yt:7; --xd:1; --yd:1.2; --w:20; --d:7; --o:0.4;" class="pt"><b></b></span>
+                  <span style="--x:4; --y:50; --xt:10; --yt:7; --xd:1.5; --yd:1.2; --w:16; --d:12; --o:0.4;" class="pt"><b></b></span> 
+                <span style="--x:10; --y:40; --xt:10; --yt:17; --xd:2; --yd:1.2; --w:28; --d:7; --o:0.4;" class="pt"><b></b></span>
+                <span style="--x:70; --y:60; --xt:12; --yt:6; --xd:2; --yd:2; --w:36; --d:5; --o:0.7;" class="pt"><b></b></span>
+                <span style="--x:10; --y:60; --xt:12; --yt:16; --xd:-1; --yd:2.2; --w:80; --d:5; --o:0.7;" class="pt"><b></b></span>
+                <span style="--x:10; --y:70; --xt:12; --yt:26; --xd:-1; --yd:2.2; --w:110; --d:5; --o:0.7;" class="pt"><b></b></span>
+               <span style="--x:19; --y:70; --xt:12; --yt:26; --xd:-1; --yd:3.2; --w:20; --d:5; --o:0.7;" class="pt"><b></b></span>
+              </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1>The world of imagination through Reality.</h1>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus efficitur eros eget bibendum vehicula. Suspendisse non purus sed quam finibus tempor. 
+            Mauris rutrum et quam vel pharetra. Pellentesque efficitur semper ex, vitae finibus ipsum tincidunt ac. 
+            Curabitur ac justo risus. Quisque eu orci sapien. Nulla interdum, lorem a lobortis imperdiet, 
+            tortor magna efficitur sem, placerat efficitur ipsum diam sed odio. Etiam id rutrum ex. "
+            Nullam consequat elementum quam a luctus.</p>
+        </section>
+        <section class="games" id="games">
+            <h1>Games</h1>
+            <h1 style="font-size: 15px; font-weight: lighter;">Coming Soon...</h1>
+            <div class="game-content">
+                <div class="selection">
+                    <div class="selection-content">
+                        <div class="selection-content-emblem"></div>
+                        <h2>Worship</h2>
+                        <p>The <b style="text-shadow: 0 0 10px aliceblue"> Rougelike Game </b> about the story of "Dark Age". </p>
+                    </div>
+                </div>
+
+                <div class="selection">
+                    <div class="selection-content">
+                        <div class="selection-content-emblem"></div>
+                        <h2>Re-Terra</h2>
+                        <p>The <b style="text-shadow: 0 0 10px aliceblue"> MMOPRG Game </b> about the Origin of "Renaiscia" in Civilize Age</p>
+                    </div>
+                </div>
+
+                <div class="selection">
+                    <div class="selection-content">
+                        <div class="selection-content-emblem"></div>
+                        <h2>Moonfall</h2>
+                        <p>The <b style="text-shadow: 0 0 10px aliceblue">Action, Hack n Slash Game</b> about the great war in the middle part of Civilize Age</p>
+                    </div>
+                </div>
+
+                <div class="selection">
+                    <div class="selection-content">
+                        <div class="selection-content-emblem"></div>
+                        <h2>Future War</h2>
+                        <p>The <b style="text-shadow: 0 0 10px aliceblue">Action, Turn-Based Game series</b> About the war in the Future Age.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h1>Mstxz</h1>
+            <div class="media">
+                <a target="_blank" href="https://itf-it67070144.vercel.app/"><i class="fa-solid fa-globe"></i></a>
+                <a target="_blank" href="https://www.youtube.com/@Mstxz-exe"><i class="fa-brands fa-youtube"></i></a>
+                <a target="_blank" href="https://www.instagram.com/mstxz.blend/"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://github.com/Mstxz"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://discord.com/users/721939136931561524"><i class="fa-brands fa-discord"></i></a>
+                <a target="_blank" href="https://soundcloud.com/mstxz-exe"><i class="fa-brands fa-soundcloud"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mewadee-seeda-1bb16830b/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
