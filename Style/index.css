@@ -1,3 +1,39 @@
+/*menu*/
+#menu {
+    position: fixed;
+    left: 2.5%;
+    top: calc(50% - 120px);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px 0;
+}
+
+#menu .line-top {
+    position: fixed;
+    width: 2px;
+    height: 350px;
+    background-color: aliceblue;
+    top: 0;
+    left: 2.85%;
+    z-index: -1;
+}
+
+#menu .line-bottom {
+    position: fixed;
+    width: 2px;
+    height: 350px;
+    background-color: aliceblue;
+    bottom: 0;
+    left: 2.85%;
+    z-index: -1;
+}
+
 /*banner*/
 .banner {
     position: relative;
@@ -20,12 +56,13 @@
 .banner h4 {
     font-size: 40px;
     letter-spacing: 10px;
+    animation: banneranimate 1.5s ease-in-out both;
 }
 
 .banner h1 {
     font-size: 200px;
     letter-spacing: 50px;
-    animation: banneranimate 3s, textmove 5s ease-in-out infinite;
+    animation: banneranimate 3s both 1s, textmove 5s ease-in-out infinite;
 }
 
 /*about*/
