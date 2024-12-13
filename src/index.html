@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,35 +19,41 @@
     <link rel="icon" href="image/Logo_ROUNDED.png">
     <title>Project Mestixz</title>
 </head>
-<body class="select-none box-border font-playfair">
+<body class="select-none box-border font-playfair bg-cover bg-fixed bg-center overflow-x-hidden transition-[background-image] duration-500 ease-in-out">
 
     <!--header-->
-    <header>
+    <header class="fixed w-full text-[aliceblue] h-[100px] flex justify-around items-center uppercase tracking-[3px] bg-gradient-to-b from-slate-950/50 to-transparent z-[100]">
         <h1 class="text-3xl font-bold">Project Mestixz</h1>
-        <nav>
-            <ul>
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#wiki">Wiki</a></li>
-            </ul>
+        <nav class="flex justify-between gap-8 color-[aliceblue] [&>a]:transition-all duration-300 ease-in-out">
+            <a href="#banner">Home</a>
+            <a href="#about">About</a>
+            <a href="#games">Games</a>
+            <a href="#wiki">Wiki</a>
         </nav>
     </header>
 
-    <main>
+    <main class="[&>section]:h-screen">
         <div class="fixed left-[2.5%] justify-center z-20" id="menu">
             <div class="fixed w-[2px] h-[350px] bg-[aliceblue] top-0 left-[2.85%]"></div>
             <div class="text-[aliceblue] flex flex-col h-screen justify-center gap-8">
-                <a href="#banner"><i class="fa fa-circle"></i></a>
-                <a href="#about"><i class="fa fa-circle"></i></a>
-                <a href="#games"><i class="fa fa-circle"></i></a>
-                <a href="#wiki"><i class="fa fa-circle"></i></a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#banner">
+                    <i class="fa fa-circle"></i><span class="opacity-0">Home</span>
+                </a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#about">
+                    <i class="fa fa-circle"></i><span class="opacity-0">About</span>
+                </a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#games">
+                    <i class="fa fa-circle"></i><span class="opacity-0">Games</span>
+                </a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#wiki">
+                    <i class="fa fa-circle"></i><span class="opacity-0">Wiki</span>
+                </a>
             </div>
             <div class="fixed w-[2px] h-[350px] bg-[aliceblue] bottom-0 left-[2.85%]"></div>
         </div>
         <!--This is Banner-->
         <section id="banner" class="relative flex justify-center items-center text-[aliceblue] flex-col h-screen text-center uppercase">
-            <div style="text-shadow: 0 0 50px aliceblue;">
+            <div class="[text-shadow:0_0_50px_aliceblue]">
                 <h4 class="text-[40px] tracking-[10px]">Project</h4>
                 <h1 class="text-[150px] tracking-[50px] font-bold">Mestixz</h1>
             </div>
@@ -89,48 +95,51 @@
               </div>
         </section>
 
-        <section class="about" id="about">
-            <h1>The world of imagination through Reality.</h1>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <!--About-->
+        <section id="about" class="bg-gradient-to-b from-transparent to-[#335] to-40% flex justify-center items-center flex-col text-[aliceblue] gap-12 text-center">
+            <h1 class="text-[50px] font-bold">The world of imagination through Reality.</h1>
+            <p class="w-1/2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Vivamus efficitur eros eget bibendum vehicula. Suspendisse non purus sed quam finibus tempor. 
             Mauris rutrum et quam vel pharetra. Pellentesque efficitur semper ex, vitae finibus ipsum tincidunt ac. 
             Curabitur ac justo risus. Quisque eu orci sapien. Nulla interdum, lorem a lobortis imperdiet, 
             tortor magna efficitur sem, placerat efficitur ipsum diam sed odio. Etiam id rutrum ex. "
             Nullam consequat elementum quam a luctus.</p>
         </section>
-        <section class="games" id="games">
-            <h1>Games</h1>
-            <h1 style="font-size: 15px; font-weight: lighter;">Coming Soon...</h1>
-            <div class="game-content">
-                <div class="selection">
-                    <div class="selection-content">
-                        <div class="selection-content-emblem"></div>
-                        <h2>Worship</h2>
-                        <p>The <b style="text-shadow: 0 0 10px aliceblue"> Rougelike Game </b> about the story of "Dark Age". </p>
+
+        <!--Games-->
+        <section id="games" class="bg-[#335] text-[aliceblue] px-[5%] py-[10%] z-1">
+            <h1 class="text-[60px] text-center tracking-[3px] ">Games</h1>
+            <h1 class="text-[15px] text-center">Coming Soon...</h1>
+            <div class="flex">
+                <div class="flex justify-evenly w-1/4 p-[10px] m-[10px] group">
+                    <div class="text-center uppercase tracking-[3px] flex flex-col items-center gap-8">
+                        <div class="rounded-full w-[250px] h-[250px] bg-gradient-to-tl from-indigo-300/50 to-transparent border-8 border-l-2 border-t-2 group-hover:translate-y-[-15px] group-hover:drop-shadow-[0_0_20px_aliceblue] transition-all duration-500 ease-in-out"></div>
+                        <h2 class="text-xl font-bold">Worship</h2>
+                        <p>The <b class="[text-shadow:0_0_50px_aliceblue]"> Rougelike Game </b> about the story of "Dark Age". </p>
                     </div>
                 </div>
 
-                <div class="selection">
-                    <div class="selection-content">
-                        <div class="selection-content-emblem"></div>
-                        <h2>Re-Terra</h2>
-                        <p>The <b style="text-shadow: 0 0 10px aliceblue"> MMOPRG Game </b> about the Origin of "Renaiscia" in Civilize Age</p>
+                <div class="flex justify-evenly w-1/4 p-[10px] m-[10px] group">
+                    <div class="text-center uppercase tracking-[3px] flex flex-col items-center gap-8">
+                        <div class="rounded-full w-[250px] h-[250px] bg-gradient-to-tl from-indigo-300/50 to-transparent border-8 border-l-2 border-t-2 group-hover:translate-y-[-15px] group-hover:drop-shadow-[0_0_20px_aliceblue] transition-all duration-500 ease-in-out"></div>
+                        <h2 class="text-xl font-bold">Re-Terra</h2>
+                        <p>The <b class="[text-shadow:0_0_10px_aliceblue]"> MMOPRG Game </b> about the Origin of "Renaiscia" in Civilize Age</p>
                     </div>
                 </div>
 
-                <div class="selection">
-                    <div class="selection-content">
-                        <div class="selection-content-emblem"></div>
-                        <h2>Moonfall</h2>
-                        <p>The <b style="text-shadow: 0 0 10px aliceblue">Action, Hack n Slash Game</b> about the great war in the middle part of Civilize Age</p>
+                <a href="moonfall.html"  class="flex justify-evenly w-1/4 p-[10px] m-[10px]">
+                    <div class="text-center uppercase tracking-[3px] flex flex-col items-center gap-8 group">
+                        <div class="rounded-full w-[250px] h-[250px] bg-gradient-to-tl from-indigo-300/50 to-transparent border-8 border-l-2 border-t-2 group-hover:translate-y-[-15px] group-hover:drop-shadow-[0_0_20px_aliceblue] transition-all duration-500 ease-in-out"></div>
+                        <h2 class="text-xl font-bold">Moonfall</h2>
+                        <p>The <b class="[text-shadow:0_0_10px_aliceblue]">Action, Hack n Slash Game</b> about the great war in the middle part of Civilize Age</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="selection">
-                    <div class="selection-content">
-                        <div class="selection-content-emblem"></div>
-                        <h2>Future War</h2>
-                        <p>The <b style="text-shadow: 0 0 10px aliceblue">Action, Turn-Based Game series</b> About the war in the Future Age.</p>
+                <div class="flex justify-evenly w-1/4 p-[10px] m-[10px] group">
+                    <div class="text-center uppercase tracking-[3px] flex flex-col items-center gap-8">
+                        <div class="rounded-full w-[250px] h-[250px] bg-gradient-to-tl from-indigo-300/50 to-transparent border-8 border-l-2 border-t-2 group-hover:translate-y-[-15px] group-hover:drop-shadow-[0_0_20px_aliceblue] transition-all duration-500 ease-in-out"></div>
+                        <h2 class="text-xl font-bold">Future War</h2>
+                        <p>The <b class="[text-shadow:0_0_10px_aliceblue]">Action, Turn-Based Game series</b> About the war in the Future Age.</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +149,7 @@
         </section>
         <footer>
             <h1>Mstxz</h1>
-            <div class="media">
+            <nav class="media">
                 <a target="_blank" href="https://mstxz.vercel.app/"><i class="fa-solid fa-globe"></i></a>
                 <a target="_blank" href="https://www.youtube.com/@Mstxz-exe"><i class="fa-brands fa-youtube"></i></a>
                 <a target="_blank" href="https://www.instagram.com/mstxz.blend/"><i class="fa-brands fa-instagram"></i></a>
@@ -148,7 +157,7 @@
                 <a target="_blank" href="https://discord.com/users/721939136931561524"><i class="fa-brands fa-discord"></i></a>
                 <a target="_blank" href="https://soundcloud.com/mstxz-exe"><i class="fa-brands fa-soundcloud"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/in/mewadee-seeda-1bb16830b/"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
+            </nav>
         </footer>
     </main>
 
