@@ -1,0 +1,138 @@
+/*banner*/
+#banner h4 {
+    animation: banneranimate 1.5s ease-in-out both;
+}
+
+#banner h1 {
+    animation: banneranimate 3s both 1s, textmove 5s ease-in-out infinite;
+}
+
+/*about*/
+.about {
+    background-image: linear-gradient(transparent, #335 40%);
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    color: aliceblue;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about h1 {
+    font-size: 50px;
+    animation: textmove 5s ease-in-out infinite;
+}
+
+.about p {
+    width: 50%;
+}
+
+/*Games*/
+
+.game-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.games {
+    background-color: #335;
+    color: white;
+    padding:  10% 5%;
+    z-index: 1;
+}
+
+.games h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 60px;
+    text-align: center;
+    flex-direction: row;
+
+}
+
+.selection {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.selection-content {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.selection-content-emblem {
+    border-radius: 50%;
+    border: 5px dashed rgba(240, 244, 255, 0.5);
+    border-bottom: 5px solid aliceblue;
+    border-right: 5px solid aliceblue;
+    background-image: linear-gradient(to top left, rgba(240, 244, 255, 0.5), transparent);
+    background-position: center;
+    background-size: 300px 300px;
+    width: 250px;
+    height: 250px;
+    transition: all 0.5s ease;
+}
+
+.selection-content:hover .selection-content-emblem {
+    transform: translateY(-15px);
+    filter: drop-shadow(0 0 20px aliceblue);
+    transition: all 0.5s ease;
+}
+
+.selection-content:hover h2 {
+    transform: scale(1.25);
+    transition: all 0.5s ease;
+}
+
+/*wiki*/
+.wiki {
+    /*background-color: #335;*/
+    padding: 5%;
+    color: aliceblue;
+}
+
+.wiki h1 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.wikitable {
+    border: 1px solid aliceblue;
+    height: 100%;
+    width: 100%;
+}
+
+.wikitable th {
+    background-color: rgba(240, 244, 255, 0.3);
+    border: none;
+}
+
+/*Animation*/
+@keyframes textmove {
+    50% {
+        transform: 
+        translateY(20px);
+    }
+}
+
+@keyframes banneranimate { 
+    from{ 
+        opacity:0 ;
+    } 
+    to{ 
+        opacity:1 ;
+    }
+  }
