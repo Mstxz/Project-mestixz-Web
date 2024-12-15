@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/particle.css">
+    <link rel="stylesheet" href="Style/footer.css">
+
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="icon" href="image/Logo_ROUNDED.png">
+    <title>Project Mestixz</title>
 </head>
-<body>
+<body class="select-none box-border font-playfair bg-cover bg-fixed bg-center overflow-x-hidden transition-[background-image] duration-500 ease-in-out">
     
+    <header class="fixed w-full text-[aliceblue] h-[100px] flex justify-around items-center uppercase tracking-[3px] bg-gradient-to-b from-slate-950/50 to-transparent z-[100]">
+        <h1 class="text-3xl font-bold">Project Mestixz</h1>
+        <nav class="flex justify-between gap-8 color-[aliceblue] [&>a]:transition-all duration-300 ease-in-out">
+            <a href="#banner">Home</a>
+            <a href="#about">About</a>
+            <a href="#community">Community</a>
+            <a href="#games">Games</a>
+            <a href="#wiki">Wiki</a>
+            <a href="#merch">Shop</a>
+        </nav>
+    </header>
+
+    <main class="[&>section]:h-screen">
+        <div class="fixed left-[2.5%] justify-center z-20" id="menu">
+            <div class="fixed w-[2px] h-[300px] bg-[aliceblue] top-0 left-[2.85%]"></div>
+            <div class="text-[aliceblue] flex flex-col h-screen justify-center gap-8">
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#banner">
+                    <i class="fa fa-circle"></i><span class="opacity-0">Home</span>
+                </a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#about">
+                    <i class="fa fa-circle"></i><span class="opacity-0">About</span>
+                </a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#community">
+                    <i class="fa fa-circle"></i><span class="opacity-0">Community</span>
+                </a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#games">
+                    <i class="fa fa-circle"></i><span class="opacity-0">Games</span>
+                </a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#wiki">
+                    <i class="fa fa-circle"></i><span class="opacity-0">Wiki</span>
+                </a>
+                <a class="flex gap-3 items-center [&>span]:hover:opacity-100" href="#merch">
+                    <i class="fa fa-circle"></i><span class="opacity-0">Shop</span>
+                </a>
+            </div>
+            <div class="fixed w-[2px] h-[300px] bg-[aliceblue] bottom-0 left-[2.85%]"></div>
+        </div>
+
+        <section>
+            
+        </section>
+    </main>
+
+    <footer class="text-[aliceblue] p-[30px_80px] bg-gradient-to-b from-transparent to-slate-950 to-90%">
+        <h1 class="text-[50px]">Mstxz</h1>
+        <nav class="flex items-center justify-evenly w-96 m-[30px_0] text-[25px] text-[aliceblue]">
+            <a target="_blank" href="https://mstxz.vercel.app/"><i class="fa-solid fa-globe"></i></a>
+            <a target="_blank" href="https://www.youtube.com/@Mstxz-exe"><i class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" href="https://www.instagram.com/mstxz.blend/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://github.com/Mstxz"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://discord.com/users/721939136931561524"><i class="fa-brands fa-discord"></i></a>
+            <a target="_blank" href="https://soundcloud.com/mstxz-exe"><i class="fa-brands fa-soundcloud"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/mewadee-seeda-1bb16830b/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </nav>
+    </footer>
+
 </body>
 </html>
