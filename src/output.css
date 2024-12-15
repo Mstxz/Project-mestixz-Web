@@ -590,16 +590,13 @@ video {
   margin: 10px;
 }
 
-.m-\[\] {
-  margin: ;
-}
-
-.m-\[30_0\] {
-  margin: 30 0;
-}
-
 .m-\[30px_0\] {
   margin: 30px 0;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .box-border {
@@ -608,10 +605,6 @@ video {
 
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .h-\[100px\] {
@@ -638,6 +631,14 @@ video {
   width: 25%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
 .w-\[250px\] {
   width: 250px;
 }
@@ -650,30 +651,10 @@ video {
   width: 100%;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
-.w-\[100\] {
-  width: 100;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-
-.grid-cols-7 {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -712,10 +693,6 @@ video {
   gap: 2rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -740,14 +717,19 @@ video {
   border-top-width: 2px;
 }
 
-.bg-\[\#335\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 51 85 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[aliceblue\] {
   --tw-bg-opacity: 1;
   background-color: rgb(240 248 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-main-blue-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 250 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-main-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 55 110 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-b {
@@ -776,8 +758,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-\[\#335\] {
-  --tw-gradient-to: #335 var(--tw-gradient-to-position);
+.to-main-blue-900 {
+  --tw-gradient-to: #21376E var(--tw-gradient-to-position);
 }
 
 .to-slate-950 {
@@ -821,6 +803,11 @@ video {
   padding-right: 5%;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-\[10\%\] {
   padding-top: 10%;
   padding-bottom: 10%;
@@ -834,6 +821,11 @@ video {
   font-family: Playfair Display, serif;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -845,6 +837,10 @@ video {
 
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .text-\[40px\] {
@@ -862,10 +858,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[25px\] {
-  font-size: 25px;
 }
 
 .font-bold {
@@ -891,6 +883,11 @@ video {
 .text-\[aliceblue\] {
   --tw-text-opacity: 1;
   color: rgb(240 248 255 / var(--tw-text-opacity, 1));
+}
+
+.text-main-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(110 152 178 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {

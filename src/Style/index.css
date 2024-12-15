@@ -20,23 +20,6 @@
     color: aliceblue;
 }
 
-.wiki h1 {
-    text-align: center;
-    font-size: 50px;
-    text-transform: uppercase;
-}
-
-.wikitable {
-    border: 1px solid aliceblue;
-    height: 100%;
-    width: 100%;
-}
-
-.wikitable th {
-    background-color: rgba(240, 244, 255, 0.3);
-    border: none;
-}
-
 /*Animation*/
 @keyframes textmove {
     50% {

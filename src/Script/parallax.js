@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 
         // Change background if scroll position is greater than or equal to the top of Section 3
         if (scrollPosition >= section3Top) {
-            document.body.style.backgroundImage = 'linear-gradient(rgba(10, 10, 10, 0.2), rgba(10, 10, 10, 1)), url("https://i.pinimg.com/1200x/41/5b/9c/415b9c7f0c3eec0b328b53be94b1fc6c.jpg")';
+            document.body.style.backgroundImage = 'linear-gradient(rgba(10, 10, 10, 0.2), rgba(10, 10, 10, 1)), url("./image/Mestixz_MAP.jpg")';
         } else {
             document.body.style.backgroundImage = 'linear-gradient(rgba(10, 10, 10, 0.2), rgba(10, 10, 10, 1)), url("https://i.pinimg.com/1200x/1c/53/d3/1c53d3383cc64042e3308d6abba7753b.jpg")';
         }
